@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+  <link rel="stylesheet"
+        type="text/css"
+        href="css/style.css" />
+</head>
+
+<title>Spy Robot</title>
+<meta name="viewport"
+      content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+
+  <div class="main"
+       id="newpost">
+    <img class="camera-bg"
+         style="width: 100%; height:80%; background-attachment: fixed;"
+         id="bg"
+         class="center"
+         src="{{ url_for('video_feed') }}">
+    <!--<img  class="camera-bg" style="width: 100%; height:80%; background-attachment: fixed;" id="bg" class="center" src="https://www.psdbox.com/wp-content/uploads/2011/01/security-camera-photoshop-effect.jpg">-->
+
+  </div>
+
+  <div class="top-right-logo">
+    <a></a>Lucy's Spy Robot</a>
+  </div>
+
+
+  <div class="navbar">
+
+    <div class="ignoreCall">
+      <a id=halt
+         class="but_def">
+        <button id="halt">
+          <i style="background: red; color: white;"
+             class="fa fa-times fa-2x"
+             aria-hidden="true"></i>
+        </button>
+      </a>
+      <a id=fwd
+         class="but_def">
+        <button id="fwd">
+          <i style="background: blue; color: white;"
+             class="fa fa-arrow-up fa-2x"
+             aria-hidden="true"></i>
+        </button>
+      </a>
+      <a id=left
+         class="but_def">
+        <button id="left">
+          <i style="background: blue; color: white;"
+             class="fa fa-arrow-left fa-2x"
+             aria-hidden="true"></i>
+        </button>
+      </a>
+      <a id=right
+         class="but_def">
+        <button id="right">
+          <i style="background: blue; color: white;"
+             class="fa fa-arrow-right fa-2x"
+             aria-hidden="true"></i>
+        </button>
+      </a>
+      <a id=bwd
+         class="but_def">
+        <button id="bwd">
+          <i style="background: blue; color: white;"
+             class="fa fa-arrow-down fa-2x"
+             aria-hidden="true"></i>
+        </button>
+      </a>
+    </div>
+
+  </div>
+
+</body>
+<script type="text/javascript"
+        src="js/script.js"></script>
+
+</html>
